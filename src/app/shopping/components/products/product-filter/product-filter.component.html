@@ -15,4 +15,29 @@
 			{{c.payload.val().name}}
 		</a>
 	</div>
+	<br>
+	<!-- <div class="list-group">
+		<a
+			class="list-group-item list-group-item-action"
+			[class.active]="!product"
+			routerLink="/"
+
+		>Recommendations</a>
+		<a *ngFor = "let c of products$ | async"
+		routerLink="/"
+		[queryParams]="{price: c.price}"
+		class="list-group-item list-group-item-action"
+		[class.active]="category === c.price"
+		>
+			{{c.payload.val().name}}
+		</a>
+		<a *ngFor = "let c of products$ | async"
+		routerLink="/"
+		[queryParams]="{price: c.price}"
+		class="list-group-item list-group-item-action"
+		[class.active]="category === c.price"
+		>
+			{{c.payload.val().name}}
+		</a>
+	</div> -->
 </div>

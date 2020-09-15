@@ -16,7 +16,8 @@ import { LoginComponent } from './components/login/login.component';
     RouterModule.forChild([])
   ],
   exports: [
-    BsNavbarComponent
+    BsNavbarComponent,
+    HomeComponent,
   ]
 })
 export class CoreModule { }

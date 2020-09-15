@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AuthGuard } from 'shared/services/auth-guard.service';
 import { SharedModule } from './../shared/shared.module';
+import { CoreModule } from './../core/core.module';
 import { CheckOutComponent } from './components/check-out/check-out.component';
 import { MyOrdersComponent } from './components/my-orders/my-orders.component';
 import { OrderSuccessComponent } from './components/order-success/order-success.component';
@@ -20,9 +21,10 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     MyOrdersComponent,
     ProductFilterComponent,
     ShoppingCartSummaryComponent,
-    ShippingFormComponent
+    ShippingFormComponent,
   ],
   imports: [
+    CoreModule,
     SharedModule,
     RouterModule.forChild([
       { path: 'products', component: ProductsComponent },

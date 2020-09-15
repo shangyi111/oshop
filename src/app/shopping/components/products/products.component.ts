@@ -3,6 +3,7 @@ import { ShoppingCart } from 'shared/models/shopping-cart';
 import { ShoppingCartService } from 'shared/services/shopping-cart.service';
 import { switchMap } from 'rxjs/operators';
 import { Product } from 'shared/models/product';
+import { HomeComponent } from '../../../core/components/home/home.component';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from 'shared/services/product.service';
 import { Component, OnInit } from '@angular/core';
