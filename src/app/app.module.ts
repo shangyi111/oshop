@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { environment } from './../environments/environment';
@@ -22,6 +23,7 @@ import { ShoppingModule } from './shopping/shopping.module';
     CoreModule,
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
     RouterModule.forRoot([
       { path: '', component: ProductsComponent },
       { path: 'login', component: LoginComponent }
